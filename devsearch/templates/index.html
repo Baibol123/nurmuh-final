@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'styles/main.css' %}">
+    <title>Main Page</title>
+</head>
+<body>
+  {% comment %} <a href="{% url 'about' %}">   {% endcomment %}
+    {% comment %} {% include 'navbar.html' %}
+  <div class="main_page">
+    <h1>Main page</h1>
+
+
+
+
+  </div> {% endcomment %}
+
+
+
+  <div class="content">
+                {% if messages %}
+              
+                    {% for message in messages %}
+                    <p{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</p>
+                    {% endfor %}
+                
+                {% endif %}
+
+
+
+
+    <nav>
+        <div class="logo">
+          {% load static %} <img src="{% static "media/Vector.png" %}" alt="home" />
+        </div>
+        <div class="search">
+        <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+          {% load static %} <a href="{% url 'bayelCon'%}">  <img src="{% static "media/Frame 96.png" %}" alt="home" /></a>
+        </div>
+    </nav>
+    <div class="cotolog">
+        <h3>Одежда</h3>
+        <h3>Фитнес</h3>
+        <h3>Аксессуары</h3>
+        <h3>Скидки</h3>
+        <h3>Горнолыжная одежда</h3>
+    </div>
+    <div class="section-text">
+      <div class="section-text1">
+        <h8>Для нее & для него</h8>
+        <h4>Онлайн сеть магазин качественных спорт-товаров.</h4>
+        <div class="section-img">{% load static %} <img src="{% static "media/unspl.png" %}" alt="home" /></div>
+        
+      </div>
+      <div>{% load static %} <img src="{% static "media/fintes.png" %}" alt="home" /></div>
+    </div>
+    <div class="section-span"><span>Для него</span></div>
+    <div class="section-img2">
+      <div>{% load static %} <img src="{% static "media/unsplboy.png" %}" alt="home" /></div>
+      <div class="section-img3">{% load static %} <img src="{% static "media/unsplgirl.png" %}" alt="home" /></div>
+    </div>
+    <div class="section-span2"><span>Для него</span></div>
+
+    <div class="about-best">Бестселлеры</div>
+    <div class="product-row">
+      <div class="product">
+        {% load static %}<img src="{% static "media/cotolog1.png" %}" alt="Product Photo">
+          <h2 class="product-name">Мужские шорты PUMA <br>
+              BMW M Motorsport </h2>
+          <div class="product-info">
+            <span class="product-price">5 600 KGS</span>
+            {% load static %}<img src="{% static "media/cotolog2.png" %}" alt="Plus Sign" class="add-to-cart">
+          </div>
+        </div>
+        <div class="product">
+          {% load static %}<img src="{% static "media/cotolog3.png" %}" alt="Product Photo" class="cotolog3">
+          <h2 class="product-name">Мужские футбольные шорты <br>
+            Nike Dri-FIT </h2>
+          <div class="product-info">
+            <span class="product-price">1 760 KGS</span>
+            {% load static %}<img src="{% static "media/cotolog2.png" %}" alt="Plus Sign" class="add-to-cart">
+          </div>
+        </div>
+
+          <div class="product">
+            {% load static %}<img src="{% static "media/cotolog4.png" %}" alt="Product Photo">
+          <h2 class="product-name">Женская футболка RE:ESCAPE </h2>
+          <div class="product-info">
+            <span class="product-price">3 200 KGS</span>
+            {% load static %}<img src="{% static "media/cotolog2.png" %}" alt="Plus Sign" class="add-to-cart">
+          </div>
+        </div>
+
+          <div class="product">
+            {% load static %}<img src="{% static "media/cotolog5.png" %}" alt="Product Photo" class="cotolog3">
+          <h2 class="product-name">Мужская рубашка поло <br>
+            Performance Primegreen </h2>
+          <div class="product-info">
+            <span class="product-price">4 400 KGS</span>
+            {% load static %}<img src="{% static "media/cotolog2.png" %}" alt="Plus Sign" class="add-to-cart">
+          </div>
+        </div>
+
+      </div>
+    </div>
+      
+
+    <div class="footer">
+      <div class="footer-text">
+        <p>О покупке</p>
+        <p>О компании</p>
+        <p>Бренды</p>
+        <p>Наши контакты</p>
+      </div>
+      <div class="footer-text">
+          <div>Доставка и оплата</div>
+          <div><a href="{% url 'aboutUs'%}">О нас</a></div>
+          <div>Adidas</div>
+          <div>+996 772 11 11 11</div>
+      </div>
+      <div class="footer-text">
+          <div>Возврат</div>
+          <div>Новости</div>
+          <div>Nike</div>
+          <div>+996 505 11 11 11</div>
+      </div>
+      <div class="footer-text">
+          <div>Гарантия</div>
+          <div>О компании</div>
+          <div>Reebok</div>
+          <div>+996 552 11 11 11</div>
+      </div>
+
+  </div>
+  <div class="line"></div>
+  <div class="footer-back">
+      
+      <div>{% load static %} <img src="{% static "media/Frame 23.png" %}" alt="home" /></div>
+      <div>{% load static %} <img src="{% static "media/Group 24.png" %}" alt="home" /></div>
+    
+  </div>
+  </div>
+</body>
+</html>

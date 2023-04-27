@@ -1,0 +1,94 @@
+<!-- https://www.figma.com/file/wkhnKaq8ZCDPDyHVvEsYlT/Aizhanat?node-id=0%3A1&t=KcH4mE1WVLk7rlBf-0  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+
+	<link rel="stylesheet" href="{% static 'styles/aboutst.css' %}">
+    
+</head>
+<body>
+
+    <div class="conteiner">
+        {% comment %} <form class="form" method="POST" action="{% url 'aboutUser' %}"> {% endcomment %}
+    <nav>
+        <div class="logo">
+            {% load static %}<a href="{% url 'main'%}"> <img src="{% static "media/bodychel.png" %}" alt="home" /> </a>
+
+        </div>
+        <div class="search">
+        <input type="text" placeholder="Search...">
+        </div>
+        <div class="icons">
+            {% load static %} <a href="{% url 'bayelCon'%}">  <img src="{% static "media/Frame669.png" %}" alt="home" /></a>
+
+        </div>
+    </nav>
+    <div class="cotolog">
+        <h3>Одежда</h3>
+        <h3>Фитнес</h3>
+        <h3>Аксессуары</h3>
+        <h3>Скидки</h3>
+        <h3>Горнолыжная одежда</h3>
+    </div>
+        <div class="about">
+            <div class="about-img">  {% load static %} <img src="{% static "media/Group 81 1.png" %}" alt="home" />
+            </div>
+            <div class="about-text">
+                <h1>О нас</h1>
+                <h6>В интернет-магазине ты найдёшь стильную одежду и обувь для мужчин, женщин и детей. Каждая коллекция в каталоге, — это микс спортивной эстетики, современных технологий и дерзкого вайба.
+
+                    Заряжайся энергией спорта в аутфитах от бренда. Здесь есть всё для эффективных тренировок: технологичная экипировка, суперудобные беговые кроссовки и футбольные бутсы, спортивные костюмы, олимпийки, легинсы и топы.
+                    
+                    Мы задаём тренды уличной моды и воплощаем их в топовых кроссовках, спортивных штанах, толстовках и худи, которые идеально впишутся в твой ритм жизни. Врывайся в мир стритстайла вместе с нами.
+                    
+                    На сайте тебя ждут трендовые новинки, бестселлеры и эксклюзивы, представленные только в онлайне — выбирай крутые кроссовки, хитовые модели RS-X или нестареющую чёрно-белую классику.</h6>
+            </div>
+        </div>
+        <div class="about-img-2">
+          {% load static %} <img src="{% static "media/Group85.png" %}" alt="home" />
+          {% comment %} <img src="./Group85.png" alt=""> {% endcomment %}
+        </div>
+        <div class="footer">
+            <div class="footer-text">
+              <p>О покупке</p>
+              <p>О компании</p>
+              <p>Бренды</p>
+              <p>Наши контакты</p>
+            </div>
+            <div class="footer-text">
+                <div>Доставка и оплата</div>
+                <div><a href="{% url 'aboutUs'%}">О нас</a></div>
+
+                <div>Adidas</div>
+                <div>+996 772 11 11 11</div>
+            </div>
+            <div class="footer-text">
+                <div>Возврат</div>
+                <div>Новости</div>
+                <div>Nike</div>
+                <div>+996 505 11 11 11</div>
+            </div>
+            <div class="footer-text">
+                <div>Гарантия</div>
+                <div>О компании</div>
+                <div>Reebok</div>
+                <div>+996 552 11 11 11</div>
+            </div>
+
+        </div>
+        <div class="line"></div>
+        <div class="footer-back">
+            
+            <div>{% load static %} <img src="{% static "media/Frame 23.png" %}" alt="home" /></div>
+            <div>{% load static %} <img src="{% static "media/Group 24.png" %}" alt="home" /></div>
+          
+        </div>
+
+    </div>
+</body>
+</html>
